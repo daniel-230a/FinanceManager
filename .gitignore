@@ -1,0 +1,24 @@
+# Ignore build output
+/bin/
+/obj/
+/*.dll
+/*.pdb
+
+# Ignore user-specific files
+/.vs/
+/.idea/
+/.suo
+/.user
+/*.userprefs
+/*.sln.ide
+.DS_Store
+
+
+# Ignore NuGet packages
+/packages/
+*.nupkg
+
+# Ignore files containing secrets or credentials
+secrets.json
+appsettings.json
+*.pfx
