@@ -1,6 +1,10 @@
 # FinanceManager
 
-A cross platform finance manager application written in .NET MAUI
+A cross platform finance manager application
+
+front-end: .NET MAUI
+
+back-end: ASP.NET core
 
 Database: PostgreSQL
 
