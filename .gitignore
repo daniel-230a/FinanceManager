@@ -13,6 +13,7 @@ FinanceManager/.vs
 /*.userprefs
 /*.sln.ide
 .DS_Store
+*.user
 
 
 # Ignore NuGet packages
