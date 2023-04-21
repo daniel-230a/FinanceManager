@@ -5,7 +5,8 @@
 /*.pdb
 
 # Ignore user-specific files
-/.vs/
+.vs/
+FinanceManager/.vs
 /.idea/
 /.suo
 /.user
