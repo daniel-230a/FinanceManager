@@ -23,6 +23,7 @@ namespace FinanceManagerAPI.Models {
             LastName = lastName;
             Email = email;
             Password = password;
+            DateCreated = DateTime.UtcNow;
         }
     }
 }
