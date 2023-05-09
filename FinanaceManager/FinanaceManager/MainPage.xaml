@@ -1,39 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FinanaceManager.MainPage">
+             x:Class="FinanaceManager.MainPage"
+             BackgroundColor="#3E92CC">
 
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
+            
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
+                Text="Finance Manager"
+                FontAttributes="Bold" 
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                Text="Sign In"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
+            <Entry x:Name="EmailEntry" Placeholder="Email" 
+               SemanticProperties.Hint="Enter your Email"
+               Margin="0,10,0,0"
+               BackgroundColor="#F0F0F0"
+               TextColor="Black"/>
+
+            <Entry x:Name="PasswordEntry" Placeholder="Password" 
+               IsPassword="True" 
+               SemanticProperties.Hint="Enter your password"
+               Margin="0,10,0,0"
+               BackgroundColor="#F0F0F0"
+               TextColor="Black"/>
+
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="LoginBTN"
+                Text="Login"
+                SemanticProperties.Hint="Login to finance manager"
+                Clicked="onLoginClicked"
                 HorizontalOptions="Center" />
+
+            <Label FontSize="16" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account yet? " />
+                        <Span Text="Sign Up" TextDecorations="Underline" TextColor="LightBlue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
 
         </VerticalStackLayout>
     </ScrollView>
