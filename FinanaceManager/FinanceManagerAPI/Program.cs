@@ -15,6 +15,9 @@ builder.Services.AddAutoMapper(typeof(UserAccountProfile));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// User account controller
+builder.Services.AddScoped<UserAccountService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
